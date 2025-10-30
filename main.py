@@ -1,5 +1,5 @@
 import random 
-
+import time 
 #User input
 # name = input("Enter a name for your character:")
 #User input- input from user for certian aspects of the program
@@ -26,6 +26,8 @@ for i in range(number_of):
     height = random.uniform(3.0,7.2)
     rounded_height = round(height, 1)
 
+    print("\n___________________________")
+
 #use rounded_height as the main variable for this
     race = ""
     if rounded_height >= 5.1 and rounded_height <= 6.1:
@@ -41,8 +43,7 @@ for i in range(number_of):
         home = "country"
     else:
         home = "city"
-
-    
+ 
 #Age
     age = 0
     if race == "Human":
@@ -64,3 +65,5 @@ for i in range(number_of):
     name = input("Provide a name for the NPC:")
     
     print(f"{name} is a", age, "year old", random.choice(physical_list).lower() + " and",random.choice(personality_list).lower(), random.choice(gender_list) + " " + race + "." + " They are a", random.choice(occupation_list).lower() + " and are", str(rounded_height) + " feet tall, they also live in the",home + ".")
+    time.sleep(.5)
+    

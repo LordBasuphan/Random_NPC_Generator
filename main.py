@@ -52,5 +52,7 @@ for i in range(number_of):
         age = random.randrange(18,150)
     elif race == "Dwarf":
         age = random.randrange(18,220)
+
     name = input("Provide a name for the NPC:")
+    
     print(f"{name} is a", age, "year old", random.choice(physical_list).lower() + " and",random.choice(personality_list).lower(),random.choice(gender_list) + " " + race + "." + " They are a", random.choice(occupation_list).lower() + " and are", str(rounded_height) + " feet tall.")

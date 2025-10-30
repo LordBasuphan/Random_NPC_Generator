@@ -1,11 +1,9 @@
 import random 
 import time 
-#User input
-# name = input("Enter a name for your character:")
-#User input- input from user for certian aspects of the program
+
+#Determines how many npcs to generate
 number_of = int(input("How many would you like to create:"))
 
-# number_of = int(input("How many would you like to create:"))
 
 #Atrribute lists
 #Atrribute lists- list of all the atributes needed
@@ -16,9 +14,6 @@ personality_list = ["Confident", "Ambitious", "Calm", "Courageous", "Creative", 
 physical_list = ["Ugly", "Fat", "Scrawny", "Weak", "Strong", "Handsome", "Pretty", "Petite", "Athletic", "Hairy", "Bald", "Long-haired", "Short-haried", "Slender", "Stocky"]
 
 occupation_list = ["Bard", "Theif", "Chemist", "Hunter", "Mage", "Alchemist", "Cleric", "Diplomat", "Investigator", "Knight", "Archer", "Cook", "Wizard"]
-
-
-
     
 #Loops/Print
 for i in range(number_of):
@@ -26,7 +21,7 @@ for i in range(number_of):
     height = random.uniform(3.0,7.2)
     rounded_height = round(height, 1)
 
-    print("\n___________________________")
+    print("\n_________________________________")
 
 #use rounded_height as the main variable for this
     race = ""

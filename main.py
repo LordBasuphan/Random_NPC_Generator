@@ -17,11 +17,14 @@ occupation_list = ["Bard", "Theif", "Chemist", "Hunter", "Mage", "Alchemist", "C
     
 #Loops/Print
 for i in range(number_of):
+
+    print("\n_________________________________")
+
     #Height/Race- function to determine the height and then subsequent race of each character
     height = random.uniform(3.0,7.2)
     rounded_height = round(height, 1)
 
-    print("\n_________________________________")
+  
 
 #use rounded_height as the main variable for this
     race = ""
@@ -39,15 +42,6 @@ for i in range(number_of):
     else:
         home = "city"
  
-#Age
-    age = 0
-    if race == "Human":
-        age = random.randrange(18,100)
-    elif race == "Elf":
-        age = random.randrange(18,150)
-    elif race == "Dwarf":
-        age = random.randrange(18,220)
-
 #Age, algorithm to determine the age of a npc
     age = 0
     if race == "Human":
@@ -59,6 +53,6 @@ for i in range(number_of):
 
     name = input("Provide a name for the NPC:")
     time.sleep(.5)
-    print(f"{name} is a", age, "year old", random.choice(physical_list).lower() + " and",random.choice(personality_list).lower(), random.choice(gender_list) + " " + race + "." + " They are a", random.choice(occupation_list).lower() + " and are", str(rounded_height) + " feet tall, they also live in the",home + ".")
+    print(f"{name} is a", age, "year old", random.choice(physical_list).lower() + " and",random.choice(personality_list).lower(), random.choice(gender_list) + " " + race + "." + " They are a", random.choice(occupation_list).lower() + " and are", str(rounded_height) + " feet tall, they live in the",home + ".")
     time.sleep(.9)
     

@@ -12,5 +12,11 @@ The first line in the loop is a print statment that is there only for cosmetic p
 Next this section of the loop is dedicated to the generation of the characters height. This uses a random.uniform function to pick between a range of floats. These which ever height is then selected for the NPC then decides its subsequent race. This is done by using if statements to assign the race variable equal to a string with it's name. For example elfs are any height betwen 6.2 and 7.2.<br>
 The next part is to determine where the character lives. This is done by assigning the variable "living_space" to either randomly true or false. If it equals true they live in the country and if else the city.<br>
 The next part utilizes the race identified in the previous part in order to generate the age. For instance if the race is a dwarf, it will choose a random integer between 18 and 220. This is just using simple conditional statements.<br>
+Next, before the final print statment, a user must input their desired name for the npc.<br>
+After the user puts in their name the program uses a sleep function to wait .5 seconds before printing the atributes.<br>
+For the final print statement, I utlized an f string to print the input for the name. Then I used a bunch of random.choice function to pick each atribute randomly. Of course I added some normal strings in order to make the final result flow.<br>
+And right after this I added another sleep function to add a small break in between npcs.<br>
+### About The Creator
+I am a highschool student learning 
 
 

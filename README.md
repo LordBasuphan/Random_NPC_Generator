@@ -17,6 +17,6 @@ After the user puts in their name the program uses a sleep function to wait .5 s
 For the final print statement, I utlized an f string to print the input for the name. Then I used a bunch of random.choice function to pick each atribute randomly. Of course I added some normal strings in order to make the final result flow.<br>
 And right after this I added another sleep function to add a small break in between npcs.<br>
 ### About The Creator
-I am a highschool student learning 
+I am a highschool student learning computer science fundamentals. I have always had a love for all things technology and I think that this is a great first step for fully entering the computer science space. 
 
 
